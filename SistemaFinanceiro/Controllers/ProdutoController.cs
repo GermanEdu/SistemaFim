@@ -5,6 +5,7 @@ using Model.Entity;
 
 namespace SistemaFinanceiro.Controllers
 {
+    [Authorize]
     public class ProdutoController : Controller
     {
         ProdutoNeg objProdutoNeg;

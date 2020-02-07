@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 namespace SistemaFinanceiro.Controllers
 {
+    [Authorize]
     public class VendaController : Controller
     {
         private VendaNeg objVendaNeg;

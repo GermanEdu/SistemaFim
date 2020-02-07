@@ -31,6 +31,8 @@
    
 </head>
 <body>
+    @Html.Partial("_loginPartial")
+
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -115,7 +117,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> Usuários</a>
+                            <a href="~/Account/Login"><i class="fa fa-user fa-fw"></i> Usuários</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-gear fa-fw"></i> Configurações</a>
@@ -257,7 +259,10 @@
     <!-- Custom Theme JavaScript -->
     <script src="~/Js/sb-admin-2.js"></script>
    
- 
+     @Scripts.Render("~/bundles/jquery") 
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>
 
