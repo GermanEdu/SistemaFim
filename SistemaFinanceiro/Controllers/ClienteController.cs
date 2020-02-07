@@ -15,7 +15,7 @@ namespace SistemaFinanceiro.Controllers
         {
             objClienteNeg = new ClienteNeg();
         }
-        // GET: Cliente
+        // GET: Cliente mostre a lista de clientes na Index
         public ActionResult Index()
         {
             List<Cliente> lista = objClienteNeg.findAll();

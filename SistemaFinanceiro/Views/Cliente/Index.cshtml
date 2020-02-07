@@ -4,8 +4,9 @@
 }
 <a href="">Relatórios</a>
 <h2 class="text-center text-success">Lista de Clientes</h2>
-<div class="well well-sm"><a class="btn btn-primary" href="~/Cliente/Create">Novo</a>
-    <a class="btn btn-info" href="~/Cliente/BuscarClientes">Buscar</a>    
+<div class="well well-sm">
+    <a class="btn btn-primary" href="~/Cliente/Create">Novo</a>
+    <a class="btn btn-info" href="~/Cliente/BuscarClientes">Buscar</a>
 </div>
 <table class="table table-hover table-striped">
     <thead>
@@ -22,7 +23,6 @@
         @foreach (var objCliente in Model)
         {
             <tr>
-
                 <td>@objCliente.IdCliente</td>
                 <td>@objCliente.Nome</td>
                 <td>@objCliente.Cpf</td>
@@ -36,4 +36,3 @@
     </tbody>
 
 </table>
-

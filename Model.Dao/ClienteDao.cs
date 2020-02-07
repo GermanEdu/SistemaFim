@@ -125,10 +125,17 @@ namespace Model.Dao
             return temRegistros;
         }
 
+
+
+
+        // foi tracado por uma procedure de select * from cliente "STP_SEL_ALL_CLIENTE" date 2020-02-06 
+
+
+
         public List<Cliente> findAll()
         {
             List<Cliente> listaClientes = new List<Cliente>();
-            string findAll = "select * from cliente order by nome";
+            string findAll = "STP_SEL_ALL_CLIENTE";
 
             try
             {
