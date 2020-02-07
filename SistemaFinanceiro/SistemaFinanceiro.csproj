@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -331,6 +332,9 @@
     <Content Include="Views\Produto\Find.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
     <Content Include="Views\Produto\Update.cshtml" />
+    <Content Include="Views\Venda\NovaVenda.cshtml" />
+    <Content Include="Views\Venda\ObterClientes.cshtml" />
+    <Content Include="Views\Venda\ObterProdutos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

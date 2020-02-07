@@ -180,7 +180,7 @@ namespace SistemaFinanceiro.Controllers
                     ViewBag.MensajeError = "Categoria [" + objCategoria.IdCategoria + "] Não está mais no sistema! ";
                     break;
 
-                case 33://CATEGORIA NAO EXISTE
+                case 33://CATEGORIA NAO EXISTE OU NÃO PODE SER APAGADA 
                     ViewBag.MensagemErro = "Categoria: [" + objCategoria.Nome + "] já foi Eliminada";
                     break;
                 case 34:

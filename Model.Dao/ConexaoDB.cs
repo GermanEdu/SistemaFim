@@ -9,7 +9,10 @@ namespace Model.Dao
 
         private ConexaoDB()
         {
-            con = new SqlConnection("Data Source=C-E0803\\SQLEXPRESS; Initial Catalog=SistemaFim; Integrated Security=True");
+            // conexão local casa
+              con = new SqlConnection("Data Source=DESKTOP-HRK38ER; Initial Catalog=SistemaCamada; Integrated Security=True");
+            // trabalho local
+            // con = new SqlConnection("Data Source=C-E0803\\SQLEXPRESS; Initial Catalog=SistemaFim; Integrated Security=True");
         }
 
         public static ConexaoDB saberEstado()
